@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sheep</title>
+    <link href="schoolstyles.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+<body>
+    <center>
+        <h1>Hello Once Again!</h1>
+        <h2>This page is about sheep!</h2>
+        <p>Here is the navigation tab!</p>
+    <table>
+        <tr>
+            <td><a href="ferrets.html">Ferrets</a></td>
+            <td><a href="index.html">Index</a></td>
+        </tr>
+    </table>
+    <p>The current time is...</p>
+    <div id="timetime" class="timetime"></div>
+        <script>
+            const day = new Date();
+            document.getElementById("timetime").innerHTML = day;
+        </script>
+    <h3>How cool are they?</h3>
+    <p>They are pretty cool fluffy creatures. Domestic sheep as we know them must be sheared every once in a while as selective breeding has caused their wool to overgrow.</p>
+    <h3>Here are some of the breeds of sheep!</h3>
+    <ul>
+        <li><strong>Galway</strong></li>
+        <li><em>Hampshire</em></li>
+        <li><u>Racka</u></li>
+    </ul>
+    <p>Like last time, here's that list as a table!</p>
+    <table>
+        <tr>
+        <td>Galway</td>
+        <td>Hampshire</td>
+        <td>Racka</td>
+        </tr>
+    </table>
+    <footer>
+        <p>Finally, here's a picture of a sheep!</p>
+        <button onclick="document.getElementById('image').style.display='block'">Click to show an image of the animal!</button>
+        <img id="image" src="images\sheepy.jpg">
+    </footer>
+    </center>
+</body>

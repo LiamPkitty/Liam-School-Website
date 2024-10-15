@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ferrets</title>
+    <link href="schoolstyles.css" rel="stylesheet" type="text/css" media="all">
+    <script>
+        document.getElementById('rotate').onclick
+        element.style.transform = 'rotate(45deg)';
+    </script>
+  </head>
+<body>
+    <center>
+        <h1>Hello Again!</h1>
+        <h2>This page is about ferrets!</h2>
+        <p>Here is the navigation tab!</p>
+    <table>
+        <tr>
+            <td><a href="index.html">Index</a></td>
+            <td><a href="sheep.html">Sheep</a></td>
+        </tr>
+    </table>
+    <p>The current time is...</p>
+    <div id="timetime" class="timetime"></div>
+        <script>
+            const day = new Date();
+            document.getElementById("timetime").innerHTML = day;
+        </script>
+    <h3>Why do you like them?</h3>
+    <p>They are very neat critters in my opinion. There are not a lot of animals which are both long and fluffy. Also they like to flop around which is pretty funny looking.</p>
+    <h3>Ferrets can be many different colors, here are some of them!</h3>
+    <ul>
+        <li><strong>Sable</strong></li>
+        <li><em>Cinnamon</em></li>
+        <li><u>Silver</u></li>
+    </ul>
+    <p>Like last time, here's that list as a table!</p>
+    <table>
+        <tr>
+        <td>Sable</td>
+        <td>Cinnamon</td>
+        <td>Silver</td>
+        </tr>
+    </table>
+    <footer>
+        <p>Finally, here's a picture of a ferret!</p>
+        <button onclick="document.getElementById('image').style.display='block'">Click to show an image of the animal!</button>
+        <img id="image" src="images\ferretwow.jpg">
+    </footer>
+    </center>
+</body>
