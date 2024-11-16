@@ -4,8 +4,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Materializing Animals</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
    <style>
       body {
          background-color:#771c3c
@@ -26,8 +27,6 @@
    </style>
 </head>
 <body>
-
-
    <!-- Navbar -->
    <nav class="header-bg">
        <div class="nav-wrapper">
@@ -95,6 +94,22 @@
    </div>
    <div class="row">
 
+   <p>Here are some facts about them!</p>
+   <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">Cats</div>
+            <div class="collapsible-body"><span>The Maine Coon cat is the largest domestic cat breed.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header">Ferrets</div>
+            <div class="collapsible-body"><span>A group of ferrets is called a "business".</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header">Sheep</div>
+            <div class="collapsible-body"><span>Sheep need to be sheared due to selective breeding preventing them from shedding their wool.</span></div>
+        </li>
+   </ul>
+
 
        <div class="col s4">
            <img src="images/catlook.jpg" class="responsive-img shadow circle pulse" style="width:500px;height:500px;">
@@ -109,6 +124,13 @@
            <blockquote>Sheep</blockquote>
        </div>
       </div>
+      <p>Here's those pictures as a carousel.</p>
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="images/catlook.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="images/ferretwow.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="images/sheepy.jpg"></a>
+      </div>
+
    <!-- Video -->
    <div id="contact" class="section section-bg">
        <div class="video-container">
@@ -127,5 +149,12 @@
            </div>
        </div>
    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems);
+        });
+    </script>
 </body>
 </html>
