@@ -17,6 +17,19 @@
             background-color: rgb(144, 144, 202);
             display: block;
         }
+        td, tr {
+            border: 3px;
+            border-style: dotted;
+             padding: 10px;
+           border-color: green;
+            }
+  
+            table {
+                border: 5px;
+                border-style: solid;
+                padding: 10px;
+                border-color: gray;
+            }
     </style>
     <script>
 $(document).ready(function(){
@@ -41,6 +54,15 @@ $(document).ready(function(){
     </script>
 </head>
 <body>
+  <table>
+    <tr>
+        <td><a href="ferrets.html">Ferrets</a></td>
+        <td><a href="index.html">Index</a></td>
+        <td><a href="materialize.html">Materialize</a></td>
+        <td><a href="bootstrap.html">Bootstrap</a></td>
+        <td><a href="jquery.html">Sheep</a></td>
+    </tr>
+</table>
     <h1>Hello!</h1>
     <h3>Click on this creature to watch him hit a jig.</h3>
     <img src="images\wunks.jpg" style="position:relative;" class="cat1">
